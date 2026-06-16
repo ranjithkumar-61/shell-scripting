@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Scipt to install the nginx
+#id -u --> for root user it will be 0 and normal may be any number
 
 USERID=$(id -u)
 
