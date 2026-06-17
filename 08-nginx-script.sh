@@ -18,3 +18,12 @@ if [ $? -ne 0 ]; then
 else
     echo "Insatlling Nginx...SUCCESS"
 fi
+
+echo "---Installing Nodejs---"
+dnf install nodejs -y
+
+if [ $? -ne 0 ]; then
+    echo "Insatlling nodejs...FAILURE"
+else
+    echo "Insatlling nodejs...SUCCESS"
+fi
