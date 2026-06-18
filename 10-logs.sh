@@ -8,6 +8,7 @@
 #ls -l | tee -a output.txt --> it displays the o/p and stores the o/p in a file both success and failure (a --> appends the o/p)
 
 
+
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
@@ -17,11 +18,12 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
+
 #If folder is not there it will create or else leave it
 mkdir -p $LOGS_FOLDER
 
-#$1, $2 argumnets
 
+#$1, $2 argumnets
 VALIDATE(){
 if [ $1 -ne 0 ]; then
     echo "$2 ... FAILURE" | tee -a $LOGS_FILE
@@ -40,4 +42,3 @@ VALIDATE $? "Installing nodejs"
 
 dnf install mysql -y &>> $LOGS_FILE
 VALIDATE $? "Installing mysql"
-
