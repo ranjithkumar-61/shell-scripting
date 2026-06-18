@@ -14,16 +14,26 @@ echo "---Installing Nginx---"
 dnf install nginx -y
 
 if [ $? -ne 0 ]; then
-    echo "Insatlling Nginx...FAILURE"
+    echo "Installing Nginx...FAILURE"
 else
-    echo "Insatlling Nginx...SUCCESS"
+    echo "Installing Nginx...SUCCESS"
 fi
 
 echo "---Installing Nodejs---"
 dnf install nodejs -y
 
 if [ $? -ne 0 ]; then
-    echo "Insatlling nodejs...FAILURE"
+    echo "Installing nodejs...FAILURE"
 else
-    echo "Insatlling nodejs...SUCCESS"
+    echo "Installing nodejs...SUCCESS"
+fi
+
+
+echo "---Installing Mysql---"
+dnf install mysql -y
+
+if [ $? -ne 0 ]; then
+    echo "Installing mysql...FAILURE"
+else
+    echo "Installing mysql...SUCCESS"
 fi
