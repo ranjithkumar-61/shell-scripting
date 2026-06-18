@@ -2,6 +2,10 @@
 
 #FUNCTIONS
 #functions are intended to complete specific task, it takes input and does the job
+#FUNC_NAME(){
+#	$1, $2
+#	code
+#}
 
 USERID=$(id -u)
 
