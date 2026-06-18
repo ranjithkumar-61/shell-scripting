@@ -39,7 +39,7 @@ fi
 for package in $@ # sudo sh 11-loogs.sh mysql nodejs
 do 
     dnf install $package -y &>>$LOGS_FILE
-    VALIDATE $? "Installing Nginx"
+    VALIDATE $? "$package insatallation"
 done
 
 
