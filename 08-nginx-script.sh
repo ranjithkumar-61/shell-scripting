@@ -28,7 +28,7 @@ else
     echo "Installing nodejs...SUCCESS"
 fi
 
-
+#MYSQL
 echo "---Installing Mysql---"
 dnf install mysql -y
 
