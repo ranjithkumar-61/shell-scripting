@@ -35,7 +35,7 @@ fi
 #if package is installed ignore or else install it
 for package in $@ # sudo sh 11-loogs.sh mysql nodejs
 do 
-    dnf list installed $package $>>$LOGS_FILE
+    dnf list installed $package &>>$LOGS_FILE
     if [ $? -ne 0 ]; then
         echo "$package is not installed, installing now"
         dnf install $package -y &>>$LOGS_FILE
