@@ -11,4 +11,4 @@ echo "Calling one script from another script"
 #sh 18-script-2.sh
 
 #By this pid wiil be same and variable calling will be same";
-source ./18-scripot-2.sh
+source ./18-script-2.sh
